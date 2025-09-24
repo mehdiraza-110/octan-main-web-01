@@ -94,6 +94,7 @@ import { GUESTS } from "@/components/GuestCard/guests";
 
 import BrandsSection from "@/components/BrandCard/BrandsSection";
 import type { Brand } from "@/components/BrandCard";
+import AboutUs from "@/components/AboutUs";
 
 const BRANDS: Brand[] = [
   { id: "1", name: "HEX Fond", src: "/logo1.png"  },
@@ -112,7 +113,10 @@ export default function HomeScreen() {
   return (
     <>
 
-        <div className="mx-auto max-w-full px-4 py-10 sm:px-6">
+    <div>
+      <AboutUs />
+    </div>
+    <div className="mx-auto max-w-full px-4 py-10 sm:px-6">
       {/* Large card (use first item) */}
         <BrandsSection brands={BRANDS} />
     </div>

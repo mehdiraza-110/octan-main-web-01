@@ -16,8 +16,8 @@ export default function BrandListItem({ id, name, logo, href }: BrandItem) {
         <Image
           src={logo}
           alt={name}
-          width={40}
-          height={40}
+          width={160}
+          height={160}
           className="h-20 w-20 rounded-full object-cover"
         />
       </span>
