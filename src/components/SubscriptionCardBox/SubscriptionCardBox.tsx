@@ -66,7 +66,7 @@ export default function SubscriptionCardBox({
         </div>
 
         <Link
-          href="/"
+          href="https://delightful-lamington-6c20ec.netlify.app/"
           className={[
             "grid h-10 w-10 place-items-center rounded-full transition",
             active ? "bg-white text-[#2E51E6]" : "bg-slate-100 text-slate-800 group-hover:bg-[#3B5BFF] group-hover:text-white",
