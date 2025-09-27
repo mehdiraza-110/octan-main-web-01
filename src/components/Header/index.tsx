@@ -137,9 +137,9 @@ export default function Header({ variant = "light" }: { variant?: "light" | "dar
         {/* Logo */}
         <Link
           href="/"
-          className="relative grid h-11 w-11 place-items-center overflow-hidden rounded-full bg-white/90 shadow"
+          className="relative grid h-24 w-24 p-0 place-items-center overflow-hidden rounded-full bg-white/90 shadow"
         >
-          <Image src="/logo.png" alt="Logo" fill className="object-contain" sizes="44px" />
+          <Image src="/logo.png" alt="Logo" fill className="object-contain" sizes="88px" />
         </Link>
 
         {/* Desktop nav */}
@@ -199,7 +199,7 @@ export default function Header({ variant = "light" }: { variant?: "light" | "dar
             <SearchIcon className="h-5 w-5" />
           </button>
           <Link
-            href="/pages/membership/apply"
+            href="/pages/subscriptions"
             className="rounded-full bg-[#3763EB] px-4 py-2 text-sm font-semibold text-white shadow hover:bg-indigo-600"
           >
             Apply for Membership

@@ -121,3 +121,24 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+/* Hide Google top bar */
+.goog-te-banner-frame.skiptranslate,
+.goog-te-gadget-icon,
+.goog-te-balloon-frame,
+.goog-te-banner {
+  display: none !important;
+}
+
+/* Hide weird inline icons Google injects */
+.goog-logo-link,
+.goog-te-gadget span {
+  display: none !important;
+}
+
+/* Ensure our page isn’t affected */
+.goog-text-highlight {
+  background: none !important;
+  box-shadow: none !important;
+}

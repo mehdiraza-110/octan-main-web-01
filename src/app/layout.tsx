@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import ClientLayout from "./ClientLayout"; // 👈 new wrapper
 import "./globals.css";
 import { Toaster } from "sonner";
+import { TranslationProvider } from "@/context/TranslationContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,11 +21,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} antialiased`} suppressHydrationWarning>
+      <TranslationProvider>
         <ClientLayout>
           {children}
           <Toaster position="top-right" richColors />
         </ClientLayout>
         <Footer />
+      </TranslationProvider>
       </body>
     </html>
   );

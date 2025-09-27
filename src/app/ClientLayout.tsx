@@ -4,6 +4,9 @@
 import { usePathname } from "next/navigation";
 import Header from "@/components/Header";
 import HeroBanner from "@/components/Header/HeroBanner";
+import LanguageToggle from "@/components/LanguageToggle";
+import { useTranslation } from "@/context/TranslationContext";
+import GoogleTranslate from "@/components/GoogleTranslate";
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -31,6 +34,12 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
       )}
 
       <main className="flex-1">{children}</main>
+
+      {/* Translation Button */}
+      {/* <LanguageToggle /> */}
+
+      {/* Translation widget */}
+      <GoogleTranslate />
     </>
   );
 }
